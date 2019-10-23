@@ -24,8 +24,6 @@ column_names = ['name', 'email']
 data = pd.read_csv("email_list.csv", names=column_names)
 
 # Who this email is being sent to
-# recipient_email = 'alexvoid44@gmail.com'
-
 #dummy emails
 recipient_emails = data.email.tolist()[1:]  # ['deckerdaniel48@gmail.com', 'jonnydoereceiver@gmail.com']
 recipient_names = data.name.tolist()[1:]  # ['Dan Decker', 'John Doe']
