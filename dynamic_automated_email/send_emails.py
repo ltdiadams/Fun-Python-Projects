@@ -14,10 +14,10 @@ import email.utils
 import pandas as pd
 
 # Which email this is being sent from
-sender_email = 'LoganDiA1999@gmail.com'
+sender_email = 'sender-email@gmail.com'
 sender_name = 'Logan DiAdams'
 # password so we can log into user's account
-password = 'pbd5g5pf'
+password = 'password'
 
 # read csv file using pandas
 column_names = ['name', 'email']
@@ -26,6 +26,7 @@ data = pd.read_csv("email_list.csv", names=column_names)
 # Who this email is being sent to
 # recipient_email = 'alexvoid44@gmail.com'
 
+#dummy emails
 recipient_emails = data.email.tolist()[1:]  # ['deckerdaniel48@gmail.com', 'jonnydoereceiver@gmail.com']
 recipient_names = data.name.tolist()[1:]  # ['Dan Decker', 'John Doe']
 
