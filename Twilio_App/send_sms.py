@@ -5,20 +5,18 @@ from twilio.rest import Client  # client creates a twilio object in our code tha
 import pandas as pd
 
 # codes required by twilio. These are specific to the twilio account being used.
-account_sid = 'AC4141b76e99a2898f4f535c7e026a37ab'
-auth_token = 'b5b74bb177bcbb81a26569ab53c2fd15'
+account_sid = # TODO
+auth_token = #TODO
 
 # make our twilio client
 client = Client(account_sid, auth_token)
 
 #
-sender = '+12052728434'
+sender = # TODO
 numbers = pd.read_csv('numbers.csv', names=['phone']).phone.tolist()[1:] # list of the phone numbers
 blacklist = pd.read_csv('blacklist.csv', names=['phone']).phone.tolist()[1:] # list of blacklisted numbers
 
 # Hardcoding numbers into the file is not a good way to store the data, instead use files for them
-# numbers = ['+15063270183', '+15063270183'] # example numbers to send to
-# blacklist = ['+10123456789'] # numbers we don't want to send to
 
 # set() ignores duplicates, recievers = numbers excluding those blacklisted
 recievers = list(set(numbers).difference(set(blacklist)))  # would normally get this from a csv file that client gives, etc.
