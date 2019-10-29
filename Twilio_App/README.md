@@ -1,4 +1,4 @@
-Interactive Text Automation App! *Just for Fun*
+<h1>Interactive Text Automation App!</h1>
 
 Uses twilio to interact with a user or multiple users given phone numbers from a CSV file, based on an input of 'Y' or 'B' the app will respond differently. 'Y' will send a response, and 'B' will add your number to the /blacklist/ so you won't recieve a message from the app again. The blacklisted numbers are contained within the 'blacklist.csv' file and are updated when a user responds with 'B'. The app also supports the sending of media (images/video).
 
