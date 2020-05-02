@@ -10,15 +10,15 @@ import pandas as pd
 import time
 import schedule
 
-client_id = '370d32db14a54198beb91fb449a41fd1'
-client_secret = '00f7877b32394481ba487ff91400f77c'
+client_id = 'YOUR_CLIENT_ID'
+client_secret = 'YOUR_SECRET'
 
-account_sid = 'AC4141b76e99a2898f4f535c7e026a37ab'
-auth_token = 'feb3ee618315e09e628473bb9e744a82'
+account_sid = 'YOUR_SID'
+auth_token = 'YOUR_TOKEN'
 
 client = Client(account_sid, auth_token)
-sender = '+12052728434'
-reciever = '+15063270183'
+sender = 'TWILIO_NUM'
+reciever = 'MY_NUM'
 
 client_credentials_manager = SpotifyClientCredentials(client_id, client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
